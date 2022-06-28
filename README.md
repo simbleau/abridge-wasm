@@ -2,7 +2,8 @@
 A monolithic repository for WASM components to be exported for use in Abridge.
 
 # ⚠️ Status
-Currently this is all research and experimentation. Please submit pull requests
+Currently this is all research and experimentation. Please submit pull requests/issues.
+
 **Disclaimer**: At this time, optimization is not a consideration. Pay absolutely no mind to the WASM build size, as this is a different topic I have ideas on...
 
 # 🏁 Quickstart
