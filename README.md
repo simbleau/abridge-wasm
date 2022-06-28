@@ -10,8 +10,31 @@ Currently this is all research and experimentation. Please submit pull requests/
 ## Dependencies
 - [Rust](https://www.rust-lang.org/tools/install)
 - [`wasm-pack`](https://rustwasm.github.io/wasm-pack/installer/)
+
+### Install Rust:
+```shell
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+1
+reboot
+rustup update
+```
+
+### Install wasm-pack
+```shell
+curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sudo sh
+```
+
 ## Build
-- `wasm-pack build (--release) --target web`
+```shell
+git clone https://github.com/simbleau/abridge-wasm
+cd abridge-wasm
+cargo build --release
+wasm-pack build --release --target web
+```
+
 ## Serve
-- `python3 -m http-server`
-- View: [http://0.0.0.0:8000/](http://0.0.0.0:8000/)
+```shell
+python3 -m http.server
+```
+
+View: [http://0.0.0.0:8000/](http://0.0.0.0:8000/)
