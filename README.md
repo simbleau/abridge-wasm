@@ -10,7 +10,7 @@ Currently this is all research and experimentation. Please submit pull requests
 - [Rust](https://www.rust-lang.org/tools/install)
 - [`wasm-pack`](https://rustwasm.github.io/wasm-pack/installer/)
 ## Build
-- `wasm-pack build (--release)`
+- `wasm-pack build (--release) --target web`
 ## Serve
 - `python3 -m http-server`
 - View: [http://0.0.0.0:8000/](http://0.0.0.0:8000/)
