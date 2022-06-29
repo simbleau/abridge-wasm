@@ -1,5 +1,5 @@
 # 🌐 Abridge + WASM
-A monolithic repository for WASM components to be exported for use in Abridge.
+A monolithic repository for WASM components to be exported for use in [Abridge](https://github.com/Jieiku/abridge).
 
 # ✅ Demos
 - See [demos](https://simbleau.github.io/abridge-wasm/demos/) served by GitHub Pages.
@@ -17,7 +17,6 @@ Currently this is all research and experimentation. Please submit pull requests/
 ### Install Rust:
 ```shell
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
-1
 reboot
 rustup update
 ```
