@@ -2,11 +2,13 @@ use wasm_bindgen::prelude::*;
 use web_sys::Element;
 
 pub fn root() -> Element {
-    let window = web_sys::window().expect("no global `window` exists");
-    let document = window.document().expect("should have a document on window");
+    let window = web_sys::window().expect_throw("no global `window` exists");
+    let document = window
+        .document()
+        .expect_throw("should have a document on window");
     document
         .document_element()
-        .expect("document should have a root element")
+        .expect_throw("document should have a root element")
 }
 
 pub fn set_class(element: web_sys::Element, name: &str) {
