@@ -1,4 +1,4 @@
-import init, { set_theme1, set_theme2 } from "./pkg/abridge_wasm.js";
+import init, { set_theme1, set_theme2 } from "./abridge_wasm.js";
 await init();
 
 const btn_theme1 = document.getElementById("btn_theme1");
