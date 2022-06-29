@@ -7,30 +7,28 @@ A monolithic repository for WASM components to be exported for use in [Abridge](
 # ⚠️ Status
 Currently this is all research and experimentation. Please submit pull requests/issues.
 
-**Disclaimer**: At this time, optimization is not a consideration. Pay absolutely no mind to the WASM build size, as this is a different topic I have ideas on...
+At this time, optimization is not a priority. [There are several ways to optimize the WASM bundle size](https://rustwasm.github.io/book/reference/code-size.html) once Abridge's WASM components are made and algorithms are optimized.
 
 # 🏁 Quickstart
 ## Dependencies
 - [Rust](https://www.rust-lang.org/tools/install)
-- [`wasm-pack`](https://rustwasm.github.io/wasm-pack/installer/)
+- [wasm-pack](https://rustwasm.github.io/wasm-pack/installer/)
 
 ### Install Rust:
 ```shell
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
-reboot
 rustup update
 ```
 
 ### Install wasm-pack
 ```shell
-curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sudo sh
+curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
 ```
 
 ## Build
 ```shell
 git clone https://github.com/simbleau/abridge-wasm
 cd abridge-wasm
-cargo build --release
 wasm-pack build --release --target web
 ```
 
