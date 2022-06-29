@@ -1,7 +1,7 @@
 # 🌐 Abridge + WASM
 A monolithic repository for WASM components to be exported for use in Abridge.
 
-# Demos
+# ✅ Demos
 - See [demos](https://simbleau.github.io/abridge-wasm/demos/) served by GitHub Pages.
 
 # ⚠️ Status
@@ -41,7 +41,7 @@ python3 -m http.server
 ```
 View: [http://0.0.0.0:8000/](http://0.0.0.0:8000/)
 
-# Exporting to Abridge
+# 🟧 Exporting to Abridge
 ## Selecting the exports
 - [lib.rs](src/lib.rs) will export **any** functions annotated with `#[wasm_bindgen]` that are (privately or publicly) included. When creating a demo, it makes sense to only export the module for the experiment. However, for Abridge, we should include everything a page needs.
 - [Build](#build) the WASM artifacts.
