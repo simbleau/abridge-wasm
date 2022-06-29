@@ -36,7 +36,9 @@ wasm-pack build --release --target web
 ```shell
 python3 -m http.server
 ```
-View: [http://0.0.0.0:8000/](http://0.0.0.0:8000/)
+
+- View: [http://0.0.0.0:8000/](http://0.0.0.0:8000/)
+- View Demo: [http://0.0.0.0:8000/demos/theme-switch/](http://0.0.0.0:8000/demos/theme-switch/)
 
 # 🟧 Exporting to Abridge
 ## Building WASM
